@@ -205,7 +205,7 @@ impl FormatTemplate {
         let s_as_bytes = s.as_bytes();
 
         //valid var tokens: {} containing any amount of alphanumericals
-        let re = Regex::new(r"\{[a-zA-Z0-9]+?\}")
+        let re = Regex::new(r"\{[a-zA-Z0-9_-]+?\}")
             .internal_error("util", "invalid regex")?;
 
         let mut token_vec: Vec<FormatTemplate> = vec![];
