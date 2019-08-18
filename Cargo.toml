@@ -29,6 +29,7 @@ num = "0.1.42"
 crossbeam-channel = "0.3"
 inotify = "0.5.1"
 maildir = "0.1.1"
+reqwest = "0.9.19"
 libpulse-binding = { optional = true, version = "2.2.3", default-features = false }
 # Used only in debug build mode
 # for profiling blocks
